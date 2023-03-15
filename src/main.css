@@ -3,3 +3,33 @@
     margin: 0;
     padding: 0;
 }
+
+html,
+body,
+#drr,
+.mainImage,
+.mainImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainImage {
+    overflow: hidden;
+}
+
+.gate {
+    position: absolute;
+    left: 21vw;
+    top: -15%;
+    width: 64% !important;
+    transform: scale(.55);
+    cursor: pointer;
+}
+
+.trans {
+    transition: all, .5s;
+}
+
+.gate:hover {
+    filter: drop-shadow(0 0 2vmin white);
+}
