@@ -33,3 +33,15 @@ body,
 .gate:hover {
     filter: drop-shadow(0 0 2vmin white);
 }
+
+.square {
+    width: 25%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* 
+.second {
+    z-index: -1;
+} */
