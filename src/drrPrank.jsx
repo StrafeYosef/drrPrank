@@ -9,8 +9,7 @@ function App() {
   let [square, setSquare] = useState(false);
   let [show, setShow] = useState(false);
 
-  // let strings = ['this is the first', 'this is second', 'this is third'];
-  // let [string, setString] = useState('this is the first');
+
 
   let mouseOver = () => {
     setSquare(square = true);
@@ -26,31 +25,12 @@ function App() {
     }, 750);
   }
 
-  // let i = 0;
-
-  // function eachOne() {
-  //   if (i <= strings.length) {
-  //     i++;
-  //     console.log(strings[i - 1])
-  //   }
-  //   if (i == strings.length) {
-  //     i = 0;
-  //   }
-  //  setTimeout(eachOne, 3000);
-  //  setString(strings[i])
-  // }
-
-  // useEffect(() => {
-  //   eachOne();
-  // }, [])
-
-
-  // let goEach = () => {
-  // }
-
   return (
     <>
       <div className="mainImage">
+        {show && <div className="move trans">
+          <p className='trans'>April Fools</p>
+        </div>}
         <img src={DRRbg} alt="drrBG" />
         <p onClick={activateIt} onMouseOver={mouseOver} onMouseOut={mouseOut} className='gate square'></p>
         {/* <p className='text'>{string}</p> */}
